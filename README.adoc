@@ -1,1 +1,28 @@
-# comandos-linux
+= Comandos Linux
+
+O Comandos Linux, por enquanto, são anotações minhas sobre comandos do linux que vou escrevendo para não esquecer e poder ter uma fonte de material de consulta rápida. Resolvi colocar ele em um repositório para que seja útil para mais pessoas. Fique a vontade em usar ele do modo que preferir, desde que esteja de acordo com a lincença.
+
+== Quais arquivos baixar ?
+
+Os arquivos comandos-linux.pdf e comandos-linux-html.zip são os mais aconselháveis de baixar para consultas offline.
+
+No arquivo comandos-linux-html.zip tem somente o arquivo comandos_linux.html. Está deste modo para poder ser baixado mais facilmente no github.
+
+== Posso utilizar o Comandos Linux online ?
+
+Claro que pode! Para utilizar online basta acessar o arquivo comados_linux.adoc ou comandos_linux.pdf. 
+
+O arquivo comandos_linux.adoc tem aguns problemas de visualizações aqui no GitHub, então dê preferência ao comandos_linux.pdf ou até mesmo opte por um arquivo offline. Ainda estou trabalhando para resolver os problemas de visualização e navegação no GitHub.
+
+== Posso contribuir ou ajudar de alguma forma ?
+
+Ainda estou elaborando uma forma de tornar o projeto mais "contribuível", então por enquanto estou elaborando um modo de organizar o fluxo de trabalho para o projeto para mais de um contribuidor além de mim. Mas se mesmo assim tiver vontade de contribuir faça um fork do repositório e depois pullrequest.
+
+Também pode me enviar um email com ideias sobre o projeto Comandos Linux ou até envie algo parecido com "Oi! Eu queria contribuir com o Comandos Linux, estou a disposição de te ajudar de alguma forma."
+
+Meu email: donizetigmjr@gmail.com
+
+== Licença
+
+Este projeto está licenciado sob a licença CC0 1.0 Universal - consulte o arquivo https://github.com/donijr/comandos-linux/blob/master/LICENSE[LICENSE] para obter detalhes.
+
