@@ -1,4 +1,4 @@
-= Comandos Linux Sh
+= Comandos Linux
 :toc:
 :toclevels: 3
 :toc: left
