@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>Comandos Linux Sh</title>
+<title>Comandos Linux</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,11 +438,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Comandos Linux Sh</h1>
+<h1>Comandos Linux</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Índice</div>
 <ul class="sectlevel1">
-<li><a href="#_globing_e_quoting">Globing e Quoting</a>
+<li><a href="#_globing_e_quoting">Globing e Quoting</a></li>
+<li><a href="#_globing_e_quoting_2">globing e quoting</a>
 <ul class="sectlevel2">
 <li><a href="#">;</a></li>
 <li><a href="#_2">&amp;&amp;</a></li>
@@ -493,7 +494,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_find">find</a>
 <ul class="sectlevel3">
-<li><a href="#_find_e_exec">find e -exec</a></li>
+<li><a href="#_find_e_exec">Find e -exec</a></li>
 </ul>
 </li>
 </ul>
@@ -518,14 +519,54 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_login">login</a></li>
+<li><a href="#_logout">logout</a></li>
+<li><a href="#_ls">ls</a></li>
 </ul>
 </li>
+<li><a href="#_m">M</a>
+<ul class="sectlevel2">
+<li><a href="#_mkdir">mkdir</a></li>
+<li><a href="#_more">more</a>
+<ul class="sectlevel3">
+<li><a href="#_atalhos_e_comandos_dentro_do_more">Atalhos e Comandos dentro do more</a></li>
+<li><a href="#_dicas_de_sequência_de_comandos_2">Dicas de Sequência de Comandos</a></li>
+</ul>
+</li>
+<li><a href="#_mv">mv</a></li>
+</ul>
+</li>
+<li><a href="#_n">N</a></li>
+<li><a href="#_o">o</a></li>
+<li><a href="#_q">Q</a></li>
+<li><a href="#_r">R</a>
+<ul class="sectlevel2">
+<li><a href="#_rm">rm</a></li>
+<li><a href="#_rmdir">rmdir</a></li>
+</ul>
+</li>
+<li><a href="#_s">S</a>
+<ul class="sectlevel2">
+<li><a href="#_set">set</a></li>
+</ul>
+</li>
+<li><a href="#_t">T</a>
+<ul class="sectlevel2">
+<li><a href="#_tail">tail</a></li>
+</ul>
+</li>
+<li><a href="#_touch">touch</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
 <h2 id="_globing_e_quoting">Globing e Quoting</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_globing_e_quoting_2">globing e quoting</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="">;</h3>
@@ -1070,7 +1111,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>find -name "*condicao1&#42;" ! -name “&#42;condicao2&#42;”</strong> &#8594; procura arquivos que satisfazem a sentença inteira, ou seja, retorna arquivos onde a condicao1 é verdadeira e a condicao2 é falsa. ! é equivalente ao NÃO (negação), ele inverte o valor lógico da sentença.</p>
 </div>
 <div class="sect3">
-<h4 id="_find_e_exec">find e -exec</h4>
+<h4 id="_find_e_exec">Find e -exec</h4>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1421,12 +1462,420 @@ tomar cuidado ao utilizar, pois pode ser usado até o rm como comando no final d
 <p><strong>login</strong> &#8594; Começa uma nova sessão no sistema, abre um novo shell. Será pedido nome do usuário e senha.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_logout">logout</h3>
+<div class="paragraph">
+<p><strong>logout</strong> &#8594; finaliza a sessão do usuário, incluindo todos os shells abertos na sessão. Conselhável utilizar o exit.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="title">Atalho</div>
+<div class="paragraph">
+<p>Pode-se usar também a combinação de teclas <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>D</kbd></span>, mas não é sempre que vai estar configurada.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ls">ls</h3>
+<div class="paragraph">
+<p><strong>ls</strong> &#8594; Exibe os arquivos do diretório em uma lista com colunas.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --color</strong> &#8594; Saida da listagem das pastas fica colorida.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --color=auto</strong> &#8594;  exibe os arquivos do diretório em uma lista com colunas com cores:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Siginificado das cores (Não é um padrão)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Cor</th>
+<th class="tableblock halign-left valign-top">Siginificado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Branco</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Arquivos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azul</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pastas</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azul-claro</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">link</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executável</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vermelho</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pacotes</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>ls *</strong> &#8594; Exibe todas, menos arquivos ocultos, as pasta e um nível de subpasta de cada pasta do diretório atual.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls .</strong>* &#8594; Exibe todos arquivos ocultos e as pasta ocultas e um nível de subpasta de cada pasta do diretório atual.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -a</strong> &#8594; lista pasta e arquivos, incluindo <code>.</code> , <code>..</code> e ocultas.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -F</strong> &#8594; lista arquivos e pastas com identificadores visuais (para monitores de uma cor) ao final do nome do arquivo:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Significado dos Caracteres</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Caracter</th>
+<th class="tableblock halign-left valign-top">Siginificado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sem caracter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Arquivo normal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diretório</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executável</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">@</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Link</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>ls -p</strong> &#8594; Lista somente pasta com o identificador visual / no final do nome. Outros tipos de arquivos não tem caracteres de identificação visual.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls –color=never</strong> &#8594; Não exibe cor na listagem de pasta e arquivos.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls – r</strong> &#8594; inverter a ordem de exibição dos arquivos. Será de z-a no lugar de a-z.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --sort=size</strong> &#8594; Exibe os arquivos do diretório em uma lista ordenada pelo tamanho, do maior para o menor.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -S</strong> &#8594; ver <code>ls --sort=size</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --sort=time</strong>&#8594; exibe os arquivos do diretório em uma lista ordenada pelo tempo de criação do arquivo, do mais recente para o mais antigo.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -t</strong> &#8594; ver <code>ls --sort=time</code></p>
+</div>
+<div class="paragraph">
+<p><strong>ls --sort=extension</strong> &#8594; exibe os arquivos do diretório em uma lista ordenada pelo tipo de extensão do arquivo., do que tem extensão para o que não tem em ordem alfabética.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -X</strong> &#8594; ver <code>ls --sort=extension</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --format=long</strong> &#8594; exibe os arquivos do diretório em uma lista de uma única coluna com bastante detalhes sobre os arquivos.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -l</strong> &#8594; mesma função do <code>ls –format=long</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -R</strong> &#8594; <code>ls</code> recursivo. Exibe o conteúdo dos diretórios recursivamente. O <code>ls</code> vai listar todas as pastas mães e filhas.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -ld nomeDiretório</strong> &#8594; exibe informações completas somente do nomeDiretório.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -d</strong> &#8594; exibe lista somente dos diretórios.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_m">M</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_mkdir">mkdir</h3>
+<div class="paragraph">
+<p><strong>mkdir nomeDiretorio</strong> &#8594; criar um um diretório na pasta atual</p>
+</div>
+<div class="paragraph">
+<p><strong>mkdir diretorio1/subdiretorio/nomeDiretorio</strong> &#8594; cria diretorio  na 	pasta direto1/subdiretorio</p>
+</div>
+<div class="paragraph">
+<p><strong>mkdir -p diretorio1/subdiretorio1/subdiretorio2</strong> &#8594; força a criação de pasta, mesmo se ,por exemplo, subdiretorio1 e subdiretorio2 não existirem.</p>
+</div>
+<div class="paragraph">
+<p><strong>mkdir nomeDiretotio -v</strong> &#8594; criar uma pasta e no final exibe uma mensagem que a pasta foi criada.</p>
+</div>
+<div class="paragraph">
+<p><strong>mkdir -p diretorio1/subdiretorio{1,2,3}/pastaAno200{1,2,3,4}</strong> &#8594; exemplo de criação de diretórios onde cria da seguite maneira:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>skinparam Legend {
+	FontSize 17
+}
+legend
+diretorio1
+|_ subdiretorio1
+  |_ pastaAno2001
+  |_ pastaAno2002
+  |_ pastaAno2003
+  |_ pastaAno2004
+|_ subdiretorio2
+  |_ pastaAno2001
+  |_ pastaAno2002
+  |_ pastaAno2003
+  |_ pastaAno2004
+|_ subdiretorio3
+  |_ pastaAno2001
+  |_ pastaAno2002
+  |_ pastaAno2003
+  |_ pastaAno2004
+end legend</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_more">more</h3>
+<div class="paragraph">
+<p><strong>more nomeArquivo</strong> &#8594; mostra conteúdo do arquivo.</p>
+</div>
+<div class="sect3">
+<h4 id="_atalhos_e_comandos_dentro_do_more">Atalhos e Comandos dentro do more</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Comando/Atalho</th>
+<th class="tableblock halign-left valign-top">Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>Enter</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navega linha por linha</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>Espaço</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navega por páginas. Próxima página.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>B</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navega por páginas. Página anterior.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>H</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ajuda.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>!</kbd>comando</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">com <kbd>!</kbd> logo em seguida digitar um comando do terminal, podemos usar comandos do shell dentro do more.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>Q</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sair.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>/</kbd></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Atalhos de Navegação da Pesquisa</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Atalho</th>
+<th class="tableblock halign-left valign-top">Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>N</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Próxima incidência</p></td>
+</tr>
+</tbody>
+</table></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pesquisar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>V</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">abre editor vi na linha atual do arquivo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_dicas_de_sequência_de_comandos_2">Dicas de Sequência de Comandos</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>-I &amp;</strong> : dica está incompleta.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mv">mv</h3>
+<div class="paragraph">
+<p><strong>mv Nomearquivo	diretorio/Destino</strong> &#8594; move arquivo ou pasta para diretorio/Destino.</p>
+</div>
+<div class="paragraph">
+<p><strong>mv nomeArquivo novoNomeArquivo</strong> &#8594; renomeia nomeArquivo (ou pasta) para novoNomeArquivo. Funciona se novoNomeArquivo não existir, se novoNomeArquivo existir irá sobreescrever o novoNomeArquivo.</p>
+</div>
+<div class="paragraph">
+<p><strong>mv -vi Nomearquivo	diretorio/Destino</strong> &#8594; forma mais segura de renomear um arquivo ou pasta. Irá perguntar se caso sobreescreva o arquivo.</p>
+</div>
+<div class="paragraph">
+<p><strong>mv -n nomeArquivo novoNomeArquivo</strong> &#8594; forma segura de renomear arquivo ou pasta. Se arquivo ou pasta existir não sobreescreve.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_n">N</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_o">o</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_q">Q</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_r">R</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_rm">rm</h3>
+<div class="paragraph">
+<p><strong>rm nomeArquivo</strong> &#8594; remove/exclui nomeArquivo</p>
+</div>
+<div class="paragraph">
+<p><strong>rm -fr nomePasta</strong> &#8594; exclui pasta e subpastas  recursivamente e forçadamente sem pergutar.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rmdir">rmdir</h3>
+<div class="paragraph">
+<p><strong>rmdir nomeDiretorio</strong> &#8594; apaga pasta nomeDiretorio, somente se ela estiver vazia.</p>
+</div>
+<div class="paragraph">
+<p><strong>rmdir diretorio1/subdiretorio/nomeDiretorio</strong> &#8594; apaga somente pasta 	nomeDiretorio, se estiver vazia.</p>
+</div>
+<div class="paragraph">
+<p><strong>rmdir -p diretorio1/subdiretorio1/subdiretorio2/nomeDiretorio</strong> &#8594; força o apagamento das que estão vazias.</p>
+</div>
+<div class="paragraph">
+<p><strong>rmdir -v diretorio1</strong> &#8594; remove diretorio1 e exibe uma mensagem relatando a remoção de diretorio1</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_s">S</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_set">set</h3>
+<div class="paragraph">
+<p><strong>set -o emacs</strong> &#8594; configura atalhos do terminal para atalhos de emacs, já é o padrão.</p>
+</div>
+<div class="paragraph">
+<p><strong>set -o vi</strong> &#8594; configura atalhos do terminal para atalhos de emacs</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_t">T</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_tail">tail</h3>
+<div class="paragraph">
+<p><strong>tail nomeArquivo</strong> &#8594; imprime as 10 últimas linhas de um arquivo.</p>
+</div>
+<div class="paragraph">
+<p><strong>tail n +30 nomeArquivo</strong> &#8594; imprime a partir da linha 30 do nomeArquivo. o número de linhas para mostrar pode variar.</p>
+</div>
+<div class="paragraph">
+<p><strong>tail n 30 nomeArquivo</strong> &#8594; imprime as últimas 30 linhas do nomeArquivo. o número de linhas para mostrar pode variar.</p>
+</div>
+<div class="paragraph">
+<p><strong>tail -f nomeArquivo</strong> &#8594; lê sempre as últimas movimentações do arquivo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_touch">touch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>touch nomeArquivo</strong> &#8594; cria um arquivo vazio. Touch em um arquivo existente atualiza a data de última modificação e acesso do arquivo.</p>
+</div>
+<div class="paragraph">
+<p><strong>touch nomeDiretorio</strong> &#8594; Touch em um diretório já existente atualiza a data de última modificação e acesso da pasta.</p>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-05-03 17:02:04 -0300
+Last updated 2020-06-07 00:35:39 -0300
 </div>
 </div>
 </body>
