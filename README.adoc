@@ -6,17 +6,18 @@ O Comandos Linux, por enquanto, são anotações minhas sobre comandos do linux 
 
 Os arquivos comandos-linux.pdf e comandos-linux-html.zip são os mais aconselháveis de baixar para consultas offline.
 
-No arquivo comandos-linux-html.zip tem somente o arquivo comandos_linux.html. Está deste modo para poder ser baixado mais facilmente no github.
+No arquivo comandos-linux-html.zip tem somente o arquivo comandos-linux.html. Está deste modo para poder ser baixado mais facilmente no GitHub.
 
 == Posso utilizar o Comandos Linux online ?
 
-Claro que pode! Para utilizar online basta acessar o arquivo comados_linux.adoc ou comandos_linux.pdf. 
+Claro que pode! Para utilizar online basta acessar o arquivo comados-linux.adoc ou comandos-linux.pdf. 
 
-O arquivo comandos_linux.adoc tem aguns problemas de visualizações aqui no GitHub, então dê preferência ao comandos_linux.pdf ou até mesmo opte por um arquivo offline. Ainda estou trabalhando para resolver os problemas de visualização e navegação no GitHub.
+O arquivo comandos-linux.adoc tem alguns problemas de visualização aqui no GitHub, então dê preferência ao comandos-linux.pdf ou até mesmo opte por um arquivo offline. Ainda estou trabalhando para resolver os problemas de visualização e navegação no GitHub.
 
 == Posso contribuir ou ajudar de alguma forma ?
 
-Ainda estou elaborando uma forma de tornar o projeto mais "contribuível", então por enquanto estou elaborando um modo de organizar o fluxo de trabalho para o projeto para mais de um contribuidor além de mim. Mas se mesmo assim tiver vontade de contribuir faça um fork do repositório e depois pullrequest.
+O projeto ainda está no começo, então ainda estou trabalhando em um fluxo de trabalho para que mais pessoas possam contribuir. Mas se mesmo assim tiver vontade de contribuir faça um fork do repositório e depois pull request, se não souber como
+https://github.com/firstcontributions/first-contributions/blob/master/translations/README.pt_br.md[aqui] tem os passos para contribuir pelo GitHub.
 
 Também pode me enviar um email com ideias sobre o projeto Comandos Linux ou até envie algo parecido com "Oi! Eu queria contribuir com o Comandos Linux, estou a disposição de te ajudar de alguma forma."
 
