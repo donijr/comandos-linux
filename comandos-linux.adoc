@@ -102,7 +102,11 @@ include::{capitulosdir}/mv.adoc[]
 
 == N
 
-== o
+== O
+
+== P
+
+include::{capitulosdir}/pwd.adoc[]
 
 == Q
 
@@ -121,3 +125,13 @@ include::{capitulosdir}/set.adoc[]
 include::{capitulodir}/tail.adoc[]
 
 include::{capitulosdir}/touch.adoc[]
+
+== U
+
+== V
+
+== X
+
+== W
+
+include::{capitulosdir}/which.adoc[]
