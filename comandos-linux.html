@@ -536,7 +536,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_n">N</a></li>
-<li><a href="#_o">o</a></li>
+<li><a href="#_o">O</a></li>
+<li><a href="#_p">P</a></li>
 <li><a href="#_q">Q</a></li>
 <li><a href="#_r">R</a>
 <ul class="sectlevel2">
@@ -555,6 +556,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_touch">touch</a></li>
+<li><a href="#_u">U</a></li>
+<li><a href="#_v">V</a></li>
+<li><a href="#_x">X</a></li>
+<li><a href="#_w">W</a>
+<ul class="sectlevel2">
+<li><a href="#_which">which</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -707,13 +716,40 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_apt">apt</h3>
 <div class="paragraph">
-<p><strong>apt-cache search nomePacote</strong> &#8594; buscar pacote</p>
+<p><strong>sudo apt autoremove</strong> &#8594; remove bibliotecas que não estão sendo utilizadas por outros programas (mesma coisa que <code>sudo apt-get autoremove</code>).</p>
 </div>
 <div class="paragraph">
-<p><strong>sudo apt-get install nomePacote</strong> &#8594; instalar pacote</p>
+<p><strong>sudo apt install nomepacote</strong> &#8594; instalar pacote (mesma coisa que <code>sudo apt-get install nomePacote</code>).</p>
 </div>
 <div class="paragraph">
-<p><strong>sudo apt-get install --only-upgrade nomePacote</strong> &#8594; atualizar somente o pacote escolhido</p>
+<p><strong>sudo apt search nomePacote</strong> &#8594; buscar pacote (mesma coisa que <code>sudo apt-cache search</code>).</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt remove nomepacote</strong> &#8594; remove pacote (mesma coisa que <code>sudo apt-get remove nomePacote</code>).</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt remove --purge nomePacote</strong> &#8594; remove pacote e seus arquivos de configurações.</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt remove --purge nomePacote -y</strong> &#8594; remove pacote e seus arquivos de configurações concordando com alterações.</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt upgrade</strong> &#8594; atualizar pacotes do sistema (mesma coisa que <code>sudo apt-get upgrade</code>)</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt-get autoremove</strong> &#8594; remove bibliotecas que não estão sendo utilizadas por outros programas.</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt-get dist-upgrade</strong> &#8594; atualiza somente o kernel do sistema.</p>
+</div>
+<div class="paragraph">
+<p><strong>apt-cache search nomePacote</strong> &#8594; buscar pacote.</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt-get install nomePacote</strong> &#8594; instalar pacote.</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo apt-get install --only-upgrade nomePacote</strong> &#8594; atualizar somente o pacote escolhido.</p>
 </div>
 <div class="paragraph">
 <p><strong>sudo apt-get -f install nomePacote</strong> &#8594; instala pacote com dependencias, corrige dependencias.</p>
@@ -725,7 +761,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>sudo apt-get update</strong> &#8594; atualizar lista dos repositórios.</p>
 </div>
 <div class="paragraph">
-<p><strong>sudo apt-get upgrade</strong> &#8594; atualizar sistema.</p>
+<p><strong>sudo apt-get upgrade</strong> &#8594; atualizar pacotes do sistema.</p>
 </div>
 </div>
 </div>
@@ -860,13 +896,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>sudo dpkg -i nomeArquivo.deb</strong> &#8594; instala pacote deb , não instala dependências.</p>
 </div>
 <div class="paragraph">
+<p><strong>dpkg --get-selections</strong> &#8594; exibe lista simplicada de pacotes que estão e já estiveram no sistema e seu estado.</p>
+</div>
+<div class="paragraph">
+<p><strong>dpkg -l</strong> &#8594; lista pacotes que estão ou já estiveram no sistema (mesma coisa que <code>dpkg --list</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>dpkg -l | grep nomePacote</strong> &#8594; encontra o pacote especificado na lista de pacotes que estão ou já estiveram no sistema.</p>
+</div>
+<div class="paragraph">
+<p><strong>dpkg --list</strong> &#8594; lista pacotes que estão ou já estiveram no sistema.</p>
+</div>
+<div class="paragraph">
 <p><strong>sudo dpkg -r nomeArquivo.deb</strong> &#8594; desinstala pacote deb , não desinstala dependências.</p>
+</div>
+<div class="paragraph">
+<p><strong>sudo dpkg --remove nomeArquivo.deb</strong>&#8594; desinstala pacote deb , não desinstala dependências (mesma coisa que <code>sudo dpkg -r nomeArquivo.deb</code>).</p>
 </div>
 <div class="paragraph">
 <p><strong>sudo dpkg -P nomeArquivo.deb</strong> &#8594; remove pacotes deb e arquivos de configurações.</p>
 </div>
 <div class="paragraph">
-<p><strong>dpkg --list</strong> &#8594; lista pacotes que estão ou já estiveram no sistema.</p>
+<p><strong>dpkg --purge nomeArquivo.deb</strong> &#8594; remove pacotes deb e arquivos de configurações (mesma coisa que <code>sudo dpkg -P nomeArquivo.deb</code>).</p>
 </div>
 </div>
 </div>
@@ -1787,9 +1838,17 @@ end legend</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_o">o</h2>
+<h2 id="_o">O</h2>
 <div class="sectionbody">
 
+</div>
+</div>
+<div class="sect1">
+<h2 id="_p">P</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>===</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1872,10 +1931,39 @@ end legend</pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_u">U</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_v">V</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_x">X</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_w">W</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_which">which</h3>
+<div class="paragraph">
+<p><strong>which comando</strong> &#8594; exibe caminho do executável.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-06-07 00:35:39 -0300
+Last updated 2020-07-21 23:52:36 -0300
 </div>
 </div>
 </body>
