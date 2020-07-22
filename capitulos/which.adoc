@@ -1,0 +1,3 @@
+=== which
+
+*which comando* -> exibe caminho do executável.
