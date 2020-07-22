@@ -122,7 +122,7 @@ include::{capitulosdir}/set.adoc[]
 
 == T
 
-include::{capitulodir}/tail.adoc[]
+include::{capitulosdir}/tail.adoc[]
 
 include::{capitulosdir}/touch.adoc[]
 
