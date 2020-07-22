@@ -2,8 +2,19 @@
 
 *sudo dpkg -i nomeArquivo.deb* -> instala pacote deb , não instala dependências.
 
+*dpkg --get-selections* -> exibe lista simplicada de pacotes que estão e já estiveram no sistema e seu estado.
+
+*dpkg -l* -> lista pacotes que estão ou já estiveram no sistema (mesma coisa que `dpkg --list`.
+
+*dpkg -l | grep nomePacote* -> encontra o pacote especificado na lista de pacotes que estão ou já estiveram no sistema.
+
+*dpkg --list* -> lista pacotes que estão ou já estiveram no sistema.
+
 *sudo dpkg -r nomeArquivo.deb* -> desinstala pacote deb , não desinstala dependências.
+
+*sudo dpkg --remove nomeArquivo.deb*-> desinstala pacote deb , não desinstala dependências (mesma coisa que `sudo dpkg -r nomeArquivo.deb`).
 
 *sudo dpkg -P nomeArquivo.deb* -> remove pacotes deb e arquivos de configurações.
 
-*dpkg --list* -> lista pacotes que estão ou já estiveram no sistema.
+*dpkg --purge nomeArquivo.deb* -> remove pacotes deb e arquivos de configurações (mesma coisa que `sudo dpkg -P nomeArquivo.deb`).
+
