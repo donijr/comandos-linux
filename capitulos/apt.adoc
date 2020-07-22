@@ -1,10 +1,28 @@
 === apt
 
-*apt-cache search nomePacote* -> buscar pacote
+*sudo apt autoremove* -> remove bibliotecas que não estão sendo utilizadas por outros programas (mesma coisa que `sudo apt-get autoremove`).
 
-*sudo apt-get install nomePacote* -> instalar pacote
+*sudo apt install nomepacote* -> instalar pacote (mesma coisa que `sudo apt-get install nomePacote`).
 
-*sudo apt-get install --only-upgrade nomePacote* -> atualizar somente o pacote escolhido
+*sudo apt search nomePacote* -> buscar pacote (mesma coisa que `sudo apt-cache search`).
+
+*sudo apt remove nomepacote* -> remove pacote (mesma coisa que `sudo apt-get remove nomePacote`).
+
+*sudo apt remove --purge nomePacote* -> remove pacote e seus arquivos de configurações.
+
+*sudo apt remove --purge nomePacote -y* -> remove pacote e seus arquivos de configurações concordando com alterações.
+
+*sudo apt upgrade* -> atualizar pacotes do sistema (mesma coisa que `sudo apt-get upgrade`)
+
+*sudo apt-get autoremove* -> remove bibliotecas que não estão sendo utilizadas por outros programas.
+
+*sudo apt-get dist-upgrade* -> atualiza somente o kernel do sistema.
+
+*apt-cache search nomePacote* -> buscar pacote.
+
+*sudo apt-get install nomePacote* -> instalar pacote.
+
+*sudo apt-get install --only-upgrade nomePacote* -> atualizar somente o pacote escolhido.
 
 *sudo apt-get -f install nomePacote* -> instala pacote com dependencias, corrige dependencias.
 
@@ -12,4 +30,4 @@
 
 *sudo apt-get update* -> atualizar lista dos repositórios.
 
-*sudo apt-get upgrade* -> atualizar sistema.
+*sudo apt-get upgrade* -> atualizar pacotes do sistema.
