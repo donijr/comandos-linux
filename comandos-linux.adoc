@@ -72,7 +72,7 @@ include::{capitulosdir}/hash.adoc[]
 
 include::{capitulosdir}/head.adoc[]
 
-include::{capitulosdir}/help.adoc.adoc[]
+include::{capitulosdir}/help.adoc[]
 
 include::{capitulosdir}/history.adoc[]
 
