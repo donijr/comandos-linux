@@ -1,0 +1,5 @@
+=== passwd
+
+*passwd* -> permite que usuário mude a sua própria senha.
+
+*passwd nomeUsuario* -> permite que superusuário, no caso pode ser o usuário root, mudar a senha do usuário especificado.
