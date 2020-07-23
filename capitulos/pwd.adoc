@@ -1,1 +1,3 @@
-===
+=== pwd
+
+*pwd* -> exibe o caminho atual em que está localizado.
