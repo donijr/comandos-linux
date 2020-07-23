@@ -1,0 +1,7 @@
+=== help
+
+*help comando* -> exibe uma descrição, muitas vezes breve, do que o comando pode fazer junto com intruções de execução do comando.
+[IMPORTANT]
+====
+O `help comando` funciona se o comando for um built-in do Shell. Built-ins são os comandos incorporados ao Shell. Para saber se o comando é um built-in use `type comando`.
+====
