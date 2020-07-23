@@ -72,6 +72,8 @@ include::{capitulosdir}/hash.adoc[]
 
 include::{capitulosdir}/head.adoc[]
 
+include::{capitulosdir}/help.adoc.adoc[]
+
 include::{capitulosdir}/history.adoc[]
 
 //incluir seção $HISTFILE
@@ -105,6 +107,8 @@ include::{capitulosdir}/mv.adoc[]
 == O
 
 == P
+
+include::{capitulosdir}/passwd.adoc[]
 
 include::{capitulosdir}/pwd.adoc[]
 
