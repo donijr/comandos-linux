@@ -1,4 +1,4 @@
-== touch
+=== touch
 
 *touch nomeArquivo* -> cria um arquivo vazio. Touch em um arquivo existente atualiza a data de última modificação e acesso do arquivo.
 
