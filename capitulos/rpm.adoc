@@ -1,0 +1,14 @@
+=== rpm
+
+*rpm -e nomepacote* -> remove pacote, não remove bibliotecas.
+
+*rpm -ihv nomePacote.rpm* -> instala pacote rpm com a opção de exibi mais detalhes sobre a instalação e com uma barra de carregamento da instalação.
+
+*rpm -q nomePacote* -> consulta se pacote está instalado no sistema.
+
+*rpm -qi nomePacote* -> consulta se pacote está instalado no sistema e exibe mais detalhes sobre pacote.
+
+*rpm -qR nomePacote* -> lista todas as bibliotecas que o pacote/programa está usando, ou seja, lista as dependências do pacote.
+
+
+
