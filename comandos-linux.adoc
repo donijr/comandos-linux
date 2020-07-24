@@ -120,6 +120,8 @@ include::{capitulosdir}/rm.adoc[]
 
 include::{capitulosdir}/rmdir.adoc[]
 
+include::{capitulosdir}/rpm.adoc[]
+
 == S
 
 include::{capitulosdir}/set.adoc[]
@@ -139,3 +141,9 @@ include::{capitulosdir}/touch.adoc[]
 == W
 
 include::{capitulosdir}/which.adoc[]
+
+== Y
+
+include::{capitulosdir}/yum.adoc[]
+
+== Z

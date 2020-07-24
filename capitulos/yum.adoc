@@ -1,0 +1,21 @@
+=== yum
+
+*yum check-install nomepacote* -> verifica se houve erros na instalação do pacote.
+
+*yum check-update nomePacote* -> verifica se existem atualizações para o pacote especificado.
+
+*yum clean packages* -> remove pacotes que estão obsoletos.
+
+*yum clean all* -> remove bibliotecas e pacotes que não estão sendo utilizadas por outros programas.
+
+*yum deplist nomePacote* -> exibe lista de depemdências do pacote.
+
+*yum remove nomePacote* -> remove pacote, não remove bibliotecas.
+
+*yum search nomePacote* -> buscar pacote.
+
+*yum update* -> atualiza informações dos pacotes do sistema e depois instala as atualizações disponíveis dos pacotes.
+
+*yum upgrade* -> somente instala as atualizações disponíveis dos pacotes.
+
+*yum install nomePacote -y* -> instalar pacote com confirmação automática.
