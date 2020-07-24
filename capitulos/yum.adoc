@@ -6,7 +6,6 @@
 
 *yum clean packages* -> remove pacotes que estão obsoletos.
 
-
 *yum clean all* -> remove bibliotecas e pacotes que não estão sendo utilizadas por outros programas.
 
 *yum deplist nomePacote* -> exibe lista de depemdências do pacote.
