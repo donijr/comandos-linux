@@ -549,6 +549,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_rm">rm</a></li>
 <li><a href="#_rmdir">rmdir</a></li>
+<li><a href="#_rpm">rpm</a></li>
 </ul>
 </li>
 <li><a href="#_s">S</a>
@@ -570,6 +571,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_which">which</a></li>
 </ul>
 </li>
+<li><a href="#_y">Y</a>
+<ul class="sectlevel2">
+<li><a href="#_yum">yum</a></li>
+</ul>
+</li>
+<li><a href="#_z">Z</a></li>
 </ul>
 </div>
 </div>
@@ -1922,6 +1929,24 @@ end legend</pre>
 <p><strong>rmdir -v diretorio1</strong> &#8594; remove diretorio1 e exibe uma mensagem relatando a remoção de diretorio1</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_rpm">rpm</h3>
+<div class="paragraph">
+<p><strong>rpm -e nomepacote</strong> &#8594; remove pacote, não remove bibliotecas.</p>
+</div>
+<div class="paragraph">
+<p><strong>rpm -ihv nomePacote.rpm</strong> &#8594; instala pacote rpm com a opção de exibi mais detalhes sobre a instalação e com uma barra de carregamento da instalação.</p>
+</div>
+<div class="paragraph">
+<p><strong>rpm -q nomePacote</strong> &#8594; consulta se pacote está instalado no sistema.</p>
+</div>
+<div class="paragraph">
+<p><strong>rpm -qi nomePacote</strong> &#8594; consulta se pacote está instalado no sistema e exibe mais detalhes sobre pacote.</p>
+</div>
+<div class="paragraph">
+<p><strong>rpm -qR nomePacote</strong> &#8594; lista todas as bibliotecas que o pacote/programa está usando, ou seja, lista as dependências do pacote.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1996,10 +2021,54 @@ end legend</pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_y">Y</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_yum">yum</h3>
+<div class="paragraph">
+<p><strong>yum check-install nomepacote</strong> &#8594; verifica se houve erros na instalação do pacote.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum check-update nomePacote</strong> &#8594; verifica se existem atualizações para o pacote especificado.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum clean packages</strong> &#8594; remove pacotes que estão obsoletos.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum clean all</strong> &#8594; remove bibliotecas e pacotes que não estão sendo utilizadas por outros programas.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum deplist nomePacote</strong> &#8594; exibe lista de depemdências do pacote.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum remove nomePacote</strong> &#8594; remove pacote, não remove bibliotecas.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum search nomePacote</strong> &#8594; buscar pacote.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum update</strong> &#8594; atualiza informações dos pacotes do sistema e depois instala as atualizações disponíveis dos pacotes.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum upgrade</strong> &#8594; somente instala as atualizações disponíveis dos pacotes.</p>
+</div>
+<div class="paragraph">
+<p><strong>yum install nomePacote -y</strong> &#8594; instalar pacote com confirmação automática.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_z">Z</h2>
+<div class="sectionbody">
+
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-23 11:11:52 -0300
+Last updated 2020-07-23 23:35:57 -0300
 </div>
 </div>
 </body>
