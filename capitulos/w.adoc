@@ -1,0 +1,3 @@
+=== w
+
+*w* -> exibe informações dos usuários atuais que estão na máquina e seus processos.
