@@ -436,11 +436,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article toc2 toc-left">
+<body class="book toc2 toc-left">
 <div id="header">
 <h1>Comandos Linux</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Índice</div>
+<ul class="sectlevel0">
+<li><a href="#_comandos">Comandos</a>
 <ul class="sectlevel1">
 <li><a href="#_globing_e_quoting">Globing e Quoting</a></li>
 <li><a href="#_globing_e_quoting_2">globing e quoting</a>
@@ -465,7 +467,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_b">B</a>
 <ul class="sectlevel2">
-<li><a href="#_builtin">builtin</a></li>
 <li><a href="#_bash">bash</a></li>
 </ul>
 </li>
@@ -541,6 +542,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_p">P</a>
 <ul class="sectlevel2">
 <li><a href="#_passwd">passwd</a></li>
+<li><a href="#_poweroff">poweroff</a></li>
 <li><a href="#_pwd">pwd</a></li>
 </ul>
 </li>
@@ -561,6 +563,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_tail">tail</a></li>
 <li><a href="#_touch">touch</a></li>
+<li><a href="#_tty">tty</a></li>
 </ul>
 </li>
 <li><a href="#_u">U</a></li>
@@ -568,6 +571,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_x">X</a></li>
 <li><a href="#_w">W</a>
 <ul class="sectlevel2">
+<li><a href="#_w_2">w</a></li>
 <li><a href="#_which">which</a></li>
 </ul>
 </li>
@@ -578,9 +582,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_z">Z</a></li>
 </ul>
+</li>
+<li><a href="#_consultar_informações_usando_help_man_info">Consultar informações usando help, man, info.</a>
+<ul class="sectlevel1">
+<li><a href="#_help_2">help</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div id="content">
+<h1 id="_comandos" class="sect0">Comandos</h1>
 <div class="sect1">
 <h2 id="_globing_e_quoting">Globing e Quoting</h2>
 <div class="sectionbody">
@@ -782,11 +794,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_b">B</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_builtin">builtin</h3>
 <div class="paragraph">
-<p><strong>builtin comando</strong> &#8594;</p>
-</div>
+<p>forceinclude::./capitulos/builtin.adoc[]</p>
 </div>
 <div class="sect2">
 <h3 id="_bash">bash</h3>
@@ -1889,6 +1898,12 @@ end legend</pre>
 </div>
 </div>
 <div class="sect2">
+<h3 id="_poweroff">poweroff</h3>
+<div class="paragraph">
+<p><strong>poweroff</strong> &#8594; desliga o sistema.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_pwd">pwd</h3>
 <div class="paragraph">
 <p><strong>pwd</strong> &#8594; exibe o caminho atual em que está localizado.</p>
@@ -1990,6 +2005,12 @@ end legend</pre>
 <p><strong>touch nomeDiretorio</strong> &#8594; Touch em um diretório já existente atualiza a data de última modificação e acesso da pasta.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_tty">tty</h3>
+<div class="paragraph">
+<p><strong>tty</strong> &#8594; exibe o nome do terminal em que o usuário está.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -2013,6 +2034,12 @@ end legend</pre>
 <div class="sect1">
 <h2 id="_w">W</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_w_2">w</h3>
+<div class="paragraph">
+<p><strong>w</strong> &#8594; exibe informações dos usuários atuais que estão na máquina e seus processos.</p>
+</div>
+</div>
 <div class="sect2">
 <h3 id="_which">which</h3>
 <div class="paragraph">
@@ -2065,10 +2092,17 @@ end legend</pre>
 
 </div>
 </div>
+<h1 id="_consultar_informações_usando_help_man_info" class="sect0">Consultar informações usando help, man, info.</h1>
+<div class="sect1">
+<h2 id="_help_2">help</h2>
+<div class="sectionbody">
+
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-23 23:35:57 -0300
+Last updated 2020-07-30 00:12:46 -0300
 </div>
 </div>
 </body>
