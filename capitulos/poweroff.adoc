@@ -1,0 +1,3 @@
+=== poweroff
+
+*poweroff* -> desliga o sistema.
