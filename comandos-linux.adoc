@@ -3,11 +3,13 @@
 :toclevels: 3
 :toc: left
 :toc-title: Índice
-:experimental: 
-
+:experimental:
+:doctype: book
 :capitulosdir: ./capitulos
 :upkey: &#8593;
 :downkey: &#8595;
+
+= Comandos
 
 //include::capitulosdir/ponto_e_virgula.adoc[]
 
@@ -33,7 +35,7 @@ include::{capitulosdir}/apt.adoc[]
 
 == B
 
-include::{capitulosdir}/builtin.adoc[]
+forceinclude::{capitulosdir}/builtin.adoc[]
 
 include::{capitulosdir}/bash.adoc[]
 
@@ -110,6 +112,8 @@ include::{capitulosdir}/mv.adoc[]
 
 include::{capitulosdir}/passwd.adoc[]
 
+include::{capitulosdir}/poweroff.adoc[]
+
 include::{capitulosdir}/pwd.adoc[]
 
 == Q
@@ -132,6 +136,8 @@ include::{capitulosdir}/tail.adoc[]
 
 include::{capitulosdir}/touch.adoc[]
 
+include::{capitulosdir}/tty.adoc[]
+
 == U
 
 == V
@@ -140,6 +146,8 @@ include::{capitulosdir}/touch.adoc[]
 
 == W
 
+include::{capitulosdir}/w.adoc[]
+
 include::{capitulosdir}/which.adoc[]
 
 == Y
@@ -147,3 +155,7 @@ include::{capitulosdir}/which.adoc[]
 include::{capitulosdir}/yum.adoc[]
 
 == Z
+
+= Consultar informações usando help, man, info.
+
+== help
