@@ -1,0 +1,3 @@
+=== tty
+
+*tty* -> exibe o nome do terminal em que o usuário está.
