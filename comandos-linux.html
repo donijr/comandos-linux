@@ -863,6 +863,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>cd</strong> &#8594; muda do diretório atual para a home do usuário.</p>
 </div>
 <div class="paragraph">
+<p><strong>cd ~</strong> &#8594; muda do diretório atual para a home do usuário.</p>
+</div>
+<div class="paragraph">
+<p><strong>cd ~nomeUsuario</strong> &#8594; muda do diretório atual para a home no usuário com nome nomeUsuario.</p>
+</div>
+<div class="paragraph">
 <p><strong>cd ~/pasta</strong> &#8594; muda do diretório atual para /home/usuario/pasta. É um atalho para usar a /home do usuário.</p>
 </div>
 <div class="paragraph">
@@ -877,6 +883,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><strong>cd -</strong> &#8594; muda para a pasta anterior em que o usuário acessou no terminal.</p>
 </div>
+<div class="paragraph">
+<p><strong>cd /</strong> &#8594; muda para o diretótio raiz.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_cp">cp</h3>
@@ -888,6 +897,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p><strong>cp -i nomeArquivo nomeArquivo(copia)</strong> &#8594; antes de copiar arquivos exibe um pergunta para confirmar a operação.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Como responder</div>
+<div class="paragraph">
+<p>Após executar o comando <code>cp -i nomeArquivo nomeArquivo(copia)</code> será perguntado se deseja sobrescrever o arquivo. Responda <code>y</code> para sim ou <code>n</code> para não.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>cp diretorioOrigem/&#42; diretórioDestino</strong> &#8594; copia todos os arquivos de diretórioOrigem para diretórioDestino. Não copia diretórios.</p>
@@ -1648,6 +1672,9 @@ tomar cuidado ao utilizar, pois pode ser usado até o rm como comando no final d
 <p><strong>ls .</strong>* &#8594; Exibe todos arquivos ocultos e as pasta ocultas e um nível de subpasta de cada pasta do diretório atual.</p>
 </div>
 <div class="paragraph">
+<p><strong>ls *.extensão</strong> &#8594; Exibe todos arquivos que terminem com a extensão indicada. Por exemplo <code>ls *.txt</code>, retornaria todos os arquivos com a extensão txt.</p>
+</div>
+<div class="paragraph">
 <p><strong>ls -a</strong> &#8594; lista pasta e arquivos, incluindo <code>.</code> , <code>..</code> e ocultas.</p>
 </div>
 <div class="paragraph">
@@ -1884,7 +1911,11 @@ end legend</pre>
 <p><strong>mv Nomearquivo	diretorio/Destino</strong> &#8594; move arquivo ou pasta para diretorio/Destino.</p>
 </div>
 <div class="paragraph">
-<p><strong>mv nomeArquivo novoNomeArquivo</strong> &#8594; renomeia nomeArquivo (ou pasta) para novoNomeArquivo. Funciona se novoNomeArquivo não existir, se novoNomeArquivo existir irá sobreescrever o novoNomeArquivo.</p>
+<p><strong>mv nomeArquivo novoNomeArquivo</strong> &#8594; renomeia
+nomeArquivo (ou pasta) para novoNomeArquivo. Funciona se novoNomeArquivo não existir, se novoNomeArquivo existir irá sobreescrever o novoNomeArquivo.</p>
+</div>
+<div class="paragraph">
+<p><strong>mv -f nomeArquivo novoNomeArquivo</strong> &#8594; Caso novoNomeArquivo já exista não irá perguntar se deseja sobrescrever os arquivos.</p>
 </div>
 <div class="paragraph">
 <p><strong>mv -vi Nomearquivo	diretorio/Destino</strong> &#8594; forma mais segura de renomear um arquivo ou pasta. Irá perguntar se caso sobreescreva o arquivo.</p>
