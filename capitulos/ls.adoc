@@ -41,6 +41,8 @@
 
 *ls .** -> Exibe todos arquivos ocultos e as pasta ocultas e um nível de subpasta de cada pasta do diretório atual.
 
+*ls +*+.extensão* -> Exibe todos arquivos que terminem com a extensão indicada. Por exemplo `ls *.txt`, retornaria todos os arquivos com a extensão txt.
+
 *ls -a* -> lista pasta e arquivos, incluindo `.` , `..` e ocultas.
 
 *ls –color=never* -> Não exibe cor na listagem de pasta e arquivos.
