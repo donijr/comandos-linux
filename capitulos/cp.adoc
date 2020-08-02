@@ -5,6 +5,11 @@
 *cp NomeArquivo diretorio1/subdiretorio1* -> cria uma cópia de nomeArquivo chamado nomeArquivo em subdiretorio1.
 
 *cp -i nomeArquivo nomeArquivo(copia)* -> antes de copiar arquivos exibe um pergunta para confirmar a operação.
+[NOTE]
+.Como responder
+====
+Após executar o comando `cp -i nomeArquivo nomeArquivo(copia)` será perguntado se deseja sobrescrever o arquivo. Responda `y` para sim ou `n` para não.
+====
 
 //&#42; É * EM UNICODE 
 *cp diretorioOrigem/&#42; diretórioDestino* -> copia todos os arquivos de diretórioOrigem para diretórioDestino. Não copia diretórios.
