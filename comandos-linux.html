@@ -444,9 +444,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel0">
 <li><a href="#_comandos">Comandos</a>
 <ul class="sectlevel1">
-<li><a href="#_globing_e_quoting">Globing e Quoting</a></li>
-<li><a href="#_globing_e_quoting_2">globing e quoting</a>
+<li><a href="#_globing_e_quoting">Globing e Quoting</a>
 <ul class="sectlevel2">
+<li><a href="#_globing_e_quoting_2">globing e quoting</a>
+<ul class="sectlevel3">
 <li><a href="#">;</a></li>
 <li><a href="#_2">&amp;&amp;</a></li>
 <li><a href="#_3">||</a></li>
@@ -459,6 +460,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_ou">“&#8230;&#8203;” ou ‘&#8230;&#8203;’</a></li>
 </ul>
 </li>
+</ul>
+</li>
 <li><a href="#_a">A</a>
 <ul class="sectlevel2">
 <li><a href="#_apropos">apropos</a></li>
@@ -467,6 +470,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_b">B</a>
 <ul class="sectlevel2">
+<li><a href="#_builtin">builtin</a></li>
 <li><a href="#_bash">bash</a></li>
 </ul>
 </li>
@@ -596,14 +600,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_globing_e_quoting">Globing e Quoting</h2>
 <div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_globing_e_quoting_2">globing e quoting</h2>
-<div class="sectionbody">
 <div class="sect2">
-<h3 id="">;</h3>
+<h3 id="_globing_e_quoting_2">globing e quoting</h3>
+<div class="sect3">
+<h4 id="">;</h4>
 <div class="paragraph">
 <p><strong>;</strong> &#8594; ; entre dois comandos faz o shell fazer o comando1 depois o comando2.<br></p>
 </div>
@@ -613,8 +613,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_2">&amp;&amp;</h3>
+<div class="sect3">
+<h4 id="_2">&amp;&amp;</h4>
 <div class="paragraph">
 <p><strong>&amp;&amp;</strong> &#8594; (E) entre dois comandos faz o shell executar o comando2 se o comando1 ter exit status = 0.</p>
 </div>
@@ -624,8 +624,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_3">||</h3>
+<div class="sect3">
+<h4 id="_3">||</h4>
 <div class="paragraph">
 <p><strong>||</strong> &#8594; (OU) entre dois comandos faz o shell executar o comando2 se o comando1 dar exit status != 0.</p>
 </div>
@@ -635,8 +635,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_4">*</h3>
+<div class="sect3">
+<h4 id="_4">*</h4>
 <div class="paragraph">
 <p><strong>&#42;</strong> &#8594;  antes ou depois de um termo expandirá a busca/seleção para qualquer termo a partir do asteriscos ou antes dele, dependendo da limitação de texto antes ou depois. Exemplos: <br></p>
 </div>
@@ -669,14 +669,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_5">?</h3>
+<div class="sect3">
+<h4 id="_5">?</h4>
 <div class="paragraph">
 <p><strong>?</strong> &#8594; antes ou depois de um termo irá expandir a buscar/selecionar o nº de caracteres correspondentes ao nº de ? digitados.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_0_9">[0-9]</h3>
+<div class="sect3">
+<h4 id="_0_9">[0-9]</h4>
 <div class="paragraph">
 <p><strong>[123]</strong> &#8594; antes ou depois de um termo irá expandir para buscar/selecionar arquivos onde o espaço que está substituindo sejam os números 1 ou 2 ou 3.</p>
 </div>
@@ -699,8 +699,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_a_z_ou_a_z">[a-z] ou [A-Z]</h3>
+<div class="sect3">
+<h4 id="_a_z_ou_a_z">[a-z] ou [A-Z]</h4>
 <div class="paragraph">
 <p><strong>[a-z]</strong> &#8594; antes ou depois de um termo irá expandir para buscar/selecionar arquivos onde o espaço que está substituindo sejam as letras de “a” a “z” minúsculas.
 	OBS: ! nega o comando. EX: [!a-z] -&#8594; retornaria coisas que não são 		letras</p>
@@ -709,22 +709,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>[A-Z]</strong> &#8594; antes ou depois de um termo irá expandir para buscar/selecionar arquivos onde o espaço que está substituindo sejam as letras de “A” a “Z” maiúsculas.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_6">{&#8230;&#8203;,&#8230;&#8203;}</h3>
+<div class="sect3">
+<h4 id="_6">{&#8230;&#8203;,&#8230;&#8203;}</h4>
 <div class="paragraph">
 <p><strong>comando {primeiro&#42;,segundo?}</strong> &#8594; vai buscar/selecionar resultados correspondentes ao primeio* e/ou ao segundo? ao mesmo tempo.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_7">\</h3>
+<div class="sect3">
+<h4 id="_7">\</h4>
 <div class="paragraph">
 <p><strong>\qualquerCoisa</strong> &#8594; ao usar o \ antes de qualquer coisa isso indica para o bash que não queremos que essa coisa seja interpretada como normalmente seria.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_ou">“&#8230;&#8203;” ou ‘&#8230;&#8203;’</h3>
+<div class="sect3">
+<h4 id="_ou">“&#8230;&#8203;” ou ‘&#8230;&#8203;’</h4>
 <div class="paragraph">
 <p><strong>echo ‘parametro’</strong> &#8594; ao usa ‘ ou “ no início e final de um parametro indica para o bash que o que está entre ‘ ou “ é um único parametro e não um comando.</p>
+</div>
 </div>
 </div>
 </div>
@@ -794,8 +795,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_b">B</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_builtin">builtin</h3>
 <div class="paragraph">
-<p>forceinclude::./capitulos/builtin.adoc[]</p>
+<p><strong>builtin comando</strong> &#8594;</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_bash">bash</h3>
@@ -1579,7 +1583,10 @@ tomar cuidado ao utilizar, pois pode ser usado até o rm como comando no final d
 <div class="sect2">
 <h3 id="_ls">ls</h3>
 <div class="paragraph">
-<p><strong>ls</strong> &#8594; Exibe os arquivos do diretório em uma lista com colunas.</p>
+<p><strong>ls</strong> &#8594; Exibe os arquivos do diretório atual em uma lista com colunas.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls caminho/do/diretório</strong> &#8594; Exibe os arquivos do diretório indicado por <code>caminho/do/diretorio</code> em uma lista com colunas.</p>
 </div>
 <div class="paragraph">
 <p><strong>ls --color</strong> &#8594; Saida da listagem das pastas fica colorida.</p>
@@ -1623,6 +1630,18 @@ tomar cuidado ao utilizar, pois pode ser usado até o rm como comando no final d
 </tbody>
 </table>
 <div class="paragraph">
+<p><strong>ls --format=long</strong> &#8594; exibe os arquivos do diretório em uma lista de uma única coluna com bastante detalhes sobre os arquivos.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --sort=extension</strong> &#8594; exibe os arquivos do diretório em uma lista ordenada pelo tipo de extensão do arquivo., do que tem extensão para o que não tem em ordem alfabética.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --sort=size</strong> &#8594; Exibe os arquivos do diretório em uma lista ordenada pelo tamanho, do maior para o menor.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls --sort=time</strong>&#8594; exibe os arquivos do diretório em uma lista ordenada pelo tempo de criação do arquivo, do mais recente para o mais antigo.</p>
+</div>
+<div class="paragraph">
 <p><strong>ls *</strong> &#8594; Exibe todas, menos arquivos ocultos, as pasta e um nível de subpasta de cada pasta do diretório atual.</p>
 </div>
 <div class="paragraph">
@@ -1630,6 +1649,12 @@ tomar cuidado ao utilizar, pois pode ser usado até o rm como comando no final d
 </div>
 <div class="paragraph">
 <p><strong>ls -a</strong> &#8594; lista pasta e arquivos, incluindo <code>.</code> , <code>..</code> e ocultas.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls –color=never</strong> &#8594; Não exibe cor na listagem de pasta e arquivos.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -d</strong> &#8594; exibe lista somente dos diretórios.</p>
 </div>
 <div class="paragraph">
 <p><strong>ls -F</strong> &#8594; lista arquivos e pastas com identificadores visuais (para monitores de uma cor) ao final do nome do arquivo:</p>
@@ -1666,46 +1691,43 @@ tomar cuidado ao utilizar, pois pode ser usado até o rm como comando no final d
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>ls -p</strong> &#8594; Lista somente pasta com o identificador visual / no final do nome. Outros tipos de arquivos não tem caracteres de identificação visual.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls –color=never</strong> &#8594; Não exibe cor na listagem de pasta e arquivos.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls – r</strong> &#8594; inverter a ordem de exibição dos arquivos. Será de z-a no lugar de a-z.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls --sort=size</strong> &#8594; Exibe os arquivos do diretório em uma lista ordenada pelo tamanho, do maior para o menor.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls -S</strong> &#8594; ver <code>ls --sort=size</code>.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls --sort=time</strong>&#8594; exibe os arquivos do diretório em uma lista ordenada pelo tempo de criação do arquivo, do mais recente para o mais antigo.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls -t</strong> &#8594; ver <code>ls --sort=time</code></p>
-</div>
-<div class="paragraph">
-<p><strong>ls --sort=extension</strong> &#8594; exibe os arquivos do diretório em uma lista ordenada pelo tipo de extensão do arquivo., do que tem extensão para o que não tem em ordem alfabética.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls -X</strong> &#8594; ver <code>ls --sort=extension</code>.</p>
-</div>
-<div class="paragraph">
-<p><strong>ls --format=long</strong> &#8594; exibe os arquivos do diretório em uma lista de uma única coluna com bastante detalhes sobre os arquivos.</p>
-</div>
-<div class="paragraph">
 <p><strong>ls -l</strong> &#8594; mesma função do <code>ls –format=long</code>.</p>
 </div>
 <div class="paragraph">
-<p><strong>ls -R</strong> &#8594; <code>ls</code> recursivo. Exibe o conteúdo dos diretórios recursivamente. O <code>ls</code> vai listar todas as pastas mães e filhas.</p>
+<p><strong>ls -la</strong> &#8594; exibe todo os arquivos do diretório, incluindo os ocultos, em uma lista de uma única coluna com bastante detalhes sobre os arquivos.</p>
 </div>
 <div class="paragraph">
 <p><strong>ls -ld nomeDiretório</strong> &#8594; exibe informações completas somente do nomeDiretório.</p>
 </div>
 <div class="paragraph">
-<p><strong>ls -d</strong> &#8594; exibe lista somente dos diretórios.</p>
+<p><strong>ls -lh</strong> &#8594; exibe os arquivos do diretório em uma lista de uma única coluna com bastante detalhes sobre os arquivos e com tamanhos dos arquivos instelígiveis para humanos usando potência de 1000, e não de 1024 (por exemplo: 1K, 200M, 1G).</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -lSr</strong> &#8594; exibe os arquivos do diretório em uma lista de uma única coluna com bastante detalhes sobre os arquivos em ordem decrescente de tamanho.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -p</strong> &#8594; Lista somente pasta com o identificador visual / no final do nome. Outros tipos de arquivos não tem caracteres de identificação visual.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls –r</strong> &#8594; inverter a ordem de exibição dos arquivos. Será de z-a no lugar de a-z.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -R</strong> &#8594; <code>ls</code> recursivo. Exibe o conteúdo dos diretórios recursivamente. O <code>ls</code> vai listar todas as pastas mães e filhas.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -Rl</strong> &#8594; <code>ls</code> recursivo. Exibe o conteúdo dos diretórios recursivamente. O <code>ls</code> vai listar todas as pastas mães e filhas no formato de uma lista de uma única coluna com bastante detalhes sobre os arquivos.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -S</strong> &#8594; ver <code>ls --sort=size</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -Sr</strong> &#8594; Exibe os arquivos do diretório em uma lista com colunas classifiacados por ordem decrescente de tamanho.</p>
+</div>
+<div class="paragraph">
+<p><strong>ls -t</strong> &#8594; ver <code>ls --sort=time</code></p>
+</div>
+<div class="paragraph">
+<p><strong>ls -X</strong> &#8594; ver <code>ls --sort=extension</code>.</p>
 </div>
 </div>
 </div>
@@ -2102,7 +2124,7 @@ end legend</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-30 00:12:46 -0300
+Last updated 2020-07-30 00:20:43 -0300
 </div>
 </div>
 </body>
