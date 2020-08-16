@@ -158,4 +158,4 @@ include::{capitulosdir}/yum.adoc[]
 
 = Consultar informações usando help, man, info.
 
-== help
+include::{capitulosdir}/consultar_informacoes.adoc[]
