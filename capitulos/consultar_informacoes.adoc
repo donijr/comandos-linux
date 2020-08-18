@@ -1,2 +1,25 @@
 == help
 
+Para usar o `comando + help` ou parecido irá depender do tipo de comando
+que quer utilizar junto com o help. Cada tipo de comando tem uma sintaxe
+diferente:
+
+
+.Bultin do shell
+* `help + comando`
+
+.Programas externos ao shell
+* `comando --help` (mais usado)
+* `comando -h`
+* `comando -?`
+
+== man
+
+O man(ual) online está presente na maioria dos comandos.
+
+*man comando* -> exibe um manual com informações do comando.
+
+*man man* -> manual do man.
+
+*man -k palavraChave* -> faz uma busca pela palavraChave em todos os
+presentes manuais do sistema.
