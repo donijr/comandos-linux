@@ -590,6 +590,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_consultar_informações_usando_help_man_info">Consultar informações usando help, man, info.</a>
 <ul class="sectlevel1">
 <li><a href="#_help_2">help</a></li>
+<li><a href="#_man">man</a>
+<ul class="sectlevel2">
+<li><a href="#_atalhos_de_navegação_dentro_do_man">Atalhos de Navegação Dentro do man</a></li>
+</ul>
+</li>
+<li><a href="#_onde_encontrar_documentação">Onde Encontrar Documentação</a></li>
+<li><a href="#_onde_o_man_encontra_a_documentação">Onde o man Encontra a Documentação</a></li>
 </ul>
 </li>
 </ul>
@@ -2149,13 +2156,151 @@ nomeArquivo (ou pasta) para novoNomeArquivo. Funciona se novoNomeArquivo não ex
 <div class="sect1">
 <h2 id="_help_2">help</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Para usar o <code>comando + help</code> ou parecido irá depender do tipo de comando
+que quer utilizar junto com o help. Cada tipo de comando tem uma sintaxe
+diferente:</p>
+</div>
+<div class="ulist">
+<div class="title">Bultin do shell</div>
+<ul>
+<li>
+<p><code>help + comando</code></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Programas externos ao shell</div>
+<ul>
+<li>
+<p><code>comando --help</code> (mais usado)</p>
+</li>
+<li>
+<p><code>comando -h</code></p>
+</li>
+<li>
+<p><code>comando -?</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_man">man</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>O man(ual) online está presente na maioria dos comandos.</p>
+</div>
+<div class="paragraph">
+<p><strong>man comando</strong> &#8594; exibe um manual com informações do comando.</p>
+</div>
+<div class="paragraph">
+<p><strong>man man</strong> &#8594; manual do man.</p>
+</div>
+<div class="paragraph">
+<p><strong>man -k palavraChave</strong> &#8594; faz uma busca pela palavraChave em todos os
+presentes manuais do sistema.</p>
+</div>
+<div class="sect2">
+<h3 id="_atalhos_de_navegação_dentro_do_man">Atalhos de Navegação Dentro do man</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Atalho</th>
+<th class="tableblock halign-left valign-top">Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>&#8593;</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navega para linha de cima.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>&#8595;</kbd></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navega para linha de baixo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><kbd>/</kbd></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Atalhos de Navegação da Pesquisa</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Atalho</th>
+<th class="tableblock halign-left valign-top">Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>N</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Próxima incidência</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Shift</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incidência anterior</p></td>
+</tr>
+</tbody>
+</table></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pesquisar</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_onde_encontrar_documentação">Onde Encontrar Documentação</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Para saber o local (diretórios) em que está o(s) manual(ais) de uma
+comando usar: <code>whereis comando</code></p>
+</div>
+<div class="paragraph">
+<p>Depois procure arquivos que teham nomes que fazem referência a
+documentação de manuais.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_onde_o_man_encontra_a_documentação">Onde o man Encontra a Documentação</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ver $MANPATH</p>
+</div>
+<div class="paragraph">
+<p>Se a variável $MANPATH é vazia ele procura um arquivo de configuração e
+este arquivo está em <code>less /etc/manpath.config</code> . No /etc/manpath.config o
+man encontra instruções de como encontrar os manuais dos comandos.</p>
+</div>
+<div class="paragraph">
+<p>Existe um comando que mostra, de forma resumida, onde o man deve
+procurar os manuais:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>~$ manpath
+/usr/local/man:/usr/local/share/man:/usr/share/man</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-30 00:20:43 -0300
+Last updated 2020-08-16 19:58:53 UTC
 </div>
 </div>
 </body>
