@@ -11,35 +11,28 @@
 *mkdir nomeDiretotio -v* -> criar uma pasta e no final exibe uma mensagem que a pasta foi criada.
 
 *mkdir -p diretorio1/subdiretorio{1,2,3}/pastaAno200{1,2,3,4}* -> exemplo de criação de diretórios onde cria da seguite maneira:
-[plantuml, format=svg, opts="inline"]
+[plantuml,{imagensdir}/mkdirp-img-01,format=svg]
 ----
-skinparam Legend {
-	FontSize 17
+@startsalt
+{
+{T
++ <&folder> diretorio1
+++ <&folder> subdiretorio1
++++ <&folder> pastaAno2001
++++ <&folder> pastaAno2002
++++ <&folder> pastaAno2003
++++ <&folder> pastaAno2004
+++ <&folder> subdiretorio2
++++ <&folder> pastaAno2001
++++ <&folder> pastaAno2002
++++ <&folder> pastaAno2003
++++ <&folder> pastaAno2004
+++ <&folder> subdiretorio3
++++ <&folder> pastaAno2001
++++ <&folder> pastaAno2002
++++ <&folder> pastaAno2003
++++ <&folder> pastaAno2004
 }
-legend
-diretorio1
-|_ subdiretorio1
-  |_ pastaAno2001
-  |_ pastaAno2002
-  |_ pastaAno2003
-  |_ pastaAno2004
-|_ subdiretorio2
-  |_ pastaAno2001
-  |_ pastaAno2002
-  |_ pastaAno2003
-  |_ pastaAno2004
-|_ subdiretorio3
-  |_ pastaAno2001
-  |_ pastaAno2002
-  |_ pastaAno2003
-  |_ pastaAno2004
-end legend
+}
+@endsalt
 ----
-
-
-
-
-
-
-
-
