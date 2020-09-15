@@ -95,6 +95,8 @@ include::{capitulosdir}/login.adoc[]
 
 include::{capitulosdir}/logout.adoc[]
 
+include::{capitulosdir}/ln.adoc[]
+
 include::{capitulosdir}/ls.adoc[]
 
 == M
