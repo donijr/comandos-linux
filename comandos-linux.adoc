@@ -6,6 +6,7 @@
 :experimental:
 :doctype: book
 :capitulosdir: ./capitulos
+:imagensdir: ./imagens
 :upkey: &#8593;
 :downkey: &#8595;
 
