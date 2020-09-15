@@ -1,0 +1,5 @@
+=== ln
+
+*ln arquivoOriginal arquivoHardLink* -> Cria um hardlink com nome ArquivoHardLink do arquvivo com nome de arquivoOriginal.
+
+*ln -s arquivoOriginal arquivoLinkSimbolico* -> Cria um link simbólico com nome ArquivoLinkSimbolico do arquivo com nome arquivoOriginal. 
