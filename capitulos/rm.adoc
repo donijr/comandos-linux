@@ -1,5 +1,7 @@
 === rm
 
-*rm nomeArquivo* -> remove/exclui nomeArquivo
+*rm nomeArquivo* -> remove/exclui arquivo ou diretório nomeArquivo
+
+*rm -f nomeArquivo* -> remove arquivo ou diretório forçadamente sem pedir confirmação ou verificar a existência do arquivo ou diretório.
 
 *rm -fr nomePasta* -> exclui pasta e subpastas  recursivamente e forçadamente sem pergutar.
