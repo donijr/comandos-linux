@@ -1,0 +1,16 @@
+TO DO
+
+- Seção para man/help/info
+- Seção aprofunda para man, explicando o que é e como navegar no man. Exemplo no livro shell linux
+- Entender melhor o apropos, parece bastante interessante o que se pode procurar.
+	- incluir comando catman -w
+- comando ssh, decidir se precisa de uma seção só pra ele
+- comando usermod, preciso estudar mais
+- Analisar se precisa escrever opçoes de ls combinadas, tipo ls -la.
+- incluir comando whatis
+- Voltar no comando ls do livro de shell após entender globing e quoting e expressões regulares, para poder incluir os comdando da página 18.
+- Incluir Seção explicando Variáveis: PATH
+
+
+- Comando which
+
